@@ -162,9 +162,88 @@ df_corr.corr()
 df_corr = df5.copy()
 df_corr = df_corr[["Sales","Profit","Segment","Ship Mode","Region"]]
 df_corr.corr()
+
+# Loss 
+loss_df=df[df['Profit'] < 0]
+loss_df.groupby(by='City').sum().sort_values('Profit',ascending=True).head(10)
+loss_df.sort_values(['Sales'],ascending=True).groupby(by='Category').mean()
+plt.rcParams['figure.figsize']=(15,3)
+plt.bar(loss_df['Sub-Category'],loss_df['Sales']);
+plt.rcParams.update({'font.size':10});
+plt.xlabel('SubCategory');
+plt.ylabel('Sales');
+
+plt.rcParams['figure.figsize']=(10,8)
+plt.bar(df['Ship Mode'],df['Sales']);
+plt.rcParams.update({'font.size':14});
+plt.xlabel('Ship Mode');
+plt.ylabel('Sales');
+
 ```
 
 ###  OUPUT:
+### Dataset:
+![s1](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/0b286fa7-b42d-476d-81ed-403cee64a1a2)
+
+### Data Preprocessing:
+![s2](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/6a80d512-c314-4819-810e-417f34c2f05b)
+
+![s3](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/378c4fda-61ea-4def-a3b2-e2b4f7823d81)
+
+![s4](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/6b26a683-dd35-4b39-9311-4f6fcf4c9425)
+
+![s5](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/f1377b9e-46c1-480f-8adb-072b2d221940)
+
+![s6](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/63e0d2c9-2784-45fd-9401-fa77003e159c)
+### Segement has highest Sales?
+#### Comparatively consumer Segment has the highest sales
+![s7](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/6ccdb6a5-15d5-4fae-861d-b8b750480b86)
+
+![s8](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/6f22637c-a7e1-4506-8e3f-3da9eb801ea6)
+### Which City has Highest profit?
+#### New York City has the Highest Profit
+![s9](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/9e8633dc-9244-42be-8c24-37fae92f6c9b)
+### Which ship mode is profitable?
+#### First Class Ship Mode is most profitable
+![s10](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/4e24e185-59c9-4931-bfe0-6bf16bfbdc50)
+
+![s11](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/104fd77b-3383-480f-9d6f-45d6177d03b4)
+
+![s12](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/e3d121f2-6555-4319-bacd-bc11fbb82bc1)
+
+![s13](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/8da5e6cc-4188-4fbb-bf73-5be16b1d9975)
+
+![s14](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/814fd16b-cb1b-43e7-96f8-c46a3c8df2b1)
+
+![s15](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/f8e2604c-f7d0-41ab-8960-33d6829bb48b)
+### Find the relation between sales and profit?
+#### Sales is not much related to profit
+![s16](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/47e50162-d783-4514-babb-46e8b374bdf7)
+
+![s17](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/2389d6d6-f959-4012-ae50-e54fab562206)
+### Heatmap:
+![s18](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/7c5ed109-0db0-4856-b60e-b2b8072a986e)
+
+### Find the relation between sales and profit based on the following category.
+### Segment
+### Profit is much related to Segment than Sales
+
+### City
+### Profit is much related to City than Sales
+
+### States
+### Sales is much related to City than Profit
+
+### Segment and Ship Mode
+### Ship mode is more related to Sales than Profit
+
+### Segment, Ship mode and Region
+### Region is more related to Profit than Sales
+![s19](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/667d39d8-0cd1-46ca-826f-10cfb1c8bf37)
+
+![s20](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/3fe66a95-16f1-4e2c-b2ad-745c8ed43e58)
+
+
 
 ### RESULT:
 Thus, Data Visualization is performed on the given dataset and save the data to a file.
