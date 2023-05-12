@@ -225,20 +225,15 @@ plt.ylabel('Sales');
 ![s18](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/7c5ed109-0db0-4856-b60e-b2b8072a986e)
 
 ### Find the relation between sales and profit based on the following category.
-### Segment
-### Profit is much related to Segment than Sales
+### Segment - Profit is much related to Segment than Sales
 
-### City
-### Profit is much related to City than Sales
+### City - Profit is much related to City than Sales
 
-### States
-### Sales is much related to City than Profit
+### States - Sales is much related to City than Profit
 
-### Segment and Ship Mode
-### Ship mode is more related to Sales than Profit
+### Segment and Ship Mode - Ship mode is more related to Sales than Profit
 
-### Segment, Ship mode and Region
-### Region is more related to Profit than Sales
+### Segment, Ship mode and Region - Region is more related to Profit than Sales
 ![s19](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/667d39d8-0cd1-46ca-826f-10cfb1c8bf37)
 
 ![s20](https://github.com/simbu07/Ex-08-Data-Visualization-/assets/94525786/3fe66a95-16f1-4e2c-b2ad-745c8ed43e58)
